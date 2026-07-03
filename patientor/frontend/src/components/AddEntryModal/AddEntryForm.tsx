@@ -357,7 +357,7 @@ const AddEntryForm = ({ onCancel, onSubmit, diagnosisLookup }: Props) => {
               label="Diagnosis codes"
               fullWidth
               {...codes}
-              value={(codes.value ?? []) as string[]}
+              value={codes.value}
               renderValue={(selected) => selected.join(", ")}
             >
               {diagnosisLookup.map((option) => (
